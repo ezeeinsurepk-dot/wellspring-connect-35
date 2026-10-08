@@ -14,7 +14,63 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      wellness_enquiries: {
+        Row: {
+          attendees: string | null
+          city: string | null
+          company: string
+          consent_at: string
+          created_at: string
+          email: string
+          format: string | null
+          full_name: string
+          id: string
+          internal_notes: string | null
+          notes: string | null
+          phone: string
+          source: Json
+          status: string
+          timing: string | null
+          topic: string
+        }
+        Insert: {
+          attendees?: string | null
+          city?: string | null
+          company: string
+          consent_at: string
+          created_at?: string
+          email: string
+          format?: string | null
+          full_name: string
+          id?: string
+          internal_notes?: string | null
+          notes?: string | null
+          phone: string
+          source?: Json
+          status?: string
+          timing?: string | null
+          topic: string
+        }
+        Update: {
+          attendees?: string | null
+          city?: string | null
+          company?: string
+          consent_at?: string
+          created_at?: string
+          email?: string
+          format?: string | null
+          full_name?: string
+          id?: string
+          internal_notes?: string | null
+          notes?: string | null
+          phone?: string
+          source?: Json
+          status?: string
+          timing?: string | null
+          topic?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
