@@ -6,7 +6,7 @@ import { categories, formats, faqs, contact, whatsappUrl } from '@/lib/wellness-
 import { enquirySchema, type Enquiry } from '@/lib/wellness-schema';
 import { submitEnquiry } from '@/lib/wellness.functions';
 import hero from '@/assets/wellness-session.jpg';
-import logo from '@/assets/ezee-logo.png.asset.json';
+import logo from '@/assets/ezee-logo-trimmed.png.asset.json';
 
 function WhatsAppIcon({ className }: { className?: string }) {
   return <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true"><path d="M20.5 11.6a8.5 8.5 0 0 1-12.6 7.5L3 20.5l1.4-4.8a8.5 8.5 0 1 1 16.1-4.1Z"/><path d="M8 7.3c-.7 0-1.2.8-1.2 1.6 0 2.7 4.3 6.8 7 6.8.9 0 1.8-.8 1.8-1.5l-2.4-1.3-.8 1c-1.7-.7-2.9-1.9-3.6-3.5l.9-.8L8.6 7.3H8Z"/></svg>;
